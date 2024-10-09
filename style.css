@@ -1,0 +1,101 @@
+html{
+	box-sizing: border-box;
+	font-family: "Karla";
+	font-size: 16px;
+}
+h2, h4, p {
+	margin: 0px;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body{
+	padding: 50px;
+}
+.mainGrid {
+	box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+	border: none;
+	border-radius: 5px;
+	height: 400px;
+	width: 600px;
+	overflow: hidden; /* díky tomu zůstanou i rohy child elementů stejně seříznuté jako parent */
+}
+.upperGrid {
+	padding: 25px;
+	height: 45%;
+	width: 100%;
+}
+.lowerGrid {
+	height: 55%;
+	width: 100%;
+	color: white;
+}
+.lowerLeftGrid {
+	padding: 25px; /*odsazení z pravýho horního rohu */ 
+	display: inline-block; /*toto se nedědí*/
+	height: 100%;
+	width: 50%;
+	background-color: #2bb3b1;
+	vertical-align: top; 
+}
+.lowerRightGrid {
+	padding: 25px;
+	display: inline-block;
+	height: 100%;
+	width: 50%;
+	background-color: #4abebd;
+	vertical-align: top;	/* pushes the content in to the upper part */
+}
+	
+#sign-up-button {
+	background-color: #c0df34;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	border-color: #8fcc56;
+	color: white;
+	width: 100%;
+	height: 40px;
+	font-size: 100%;
+	padding: 10px;
+	}
+
+#sign-up-button:hover{
+	background-color: #EFDD8D;
+	transform: rotate(-5deg);
+}
+.upperGrid h2 {
+	color: #44a8a7;
+	margin-bottom: 15px;
+	}
+.upperGrid h4 {
+	color: #bfdf32;
+	margin-bottom: 10px;
+}
+.lowerGrid ul {
+	list-style-type: none;
+	padding: 0px;
+	color: hsl(212, 6%, 93%);
+}
+#payment {
+	margin-top: 10px;
+	color: hsl(212, 6%, 93%);
+}
+#money-style{
+	font-size: 1.4rem;
+	color: white;
+	font-weight: 500;
+}
+#per-month {
+	position: relative;
+	top: -2px;
+	font-size: 0.85rem;
+	margin-left: 5px;
+}
+#money-style, #per-month {
+	display: inline-block;
+}
+.lowerLeftGrid p{
+	margin-bottom: 20px;
+}
+	
